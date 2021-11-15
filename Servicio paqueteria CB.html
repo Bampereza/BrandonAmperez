@@ -1,0 +1,60 @@
+<!--Brandon Ampérez 0909 - 21 - 4628 -->
+
+<!DOCTYPE html>
+<html lang="es-ES">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="paqueteria.css">
+
+    <style>body {
+        background-color:rgb(255, 102, 13)
+    }
+    </style>
+
+    <title>servicio de paqueteria_BA</title>
+
+    <body>
+        <form ><!--Texto principal de la pagina -->
+          <h1>Servicio de paqueteria_BA </h1><br>
+          <h2>Peso de Mercaderia</h2><br>
+       <h3>1: SI<br>
+          2: NO <br>
+        </h3><br><br>
+    
+         
+         <div>
+            <form action="">
+                opcion:<br>
+                <br><!-- Cuadros de texto para selección -->
+              <input class="controls" id="op" type="text" placeholder="ingrese su opcion"> <br>  <br> 
+              <input type="button" value="seleccion" onclick="myFunction()" id="boton"></input> 
+               <br><br>
+              <p id="demo"></p>
+            </form>
+         </div><br>
+          <br><br>
+          </form>
+
+          <script>  //funciones y switch
+            function myFunction() { 
+         
+              var opcion = document.getElementById("op").value;
+            
+              switch(opcion) { 
+                case "1":
+                window.location="Funcion 1.html";
+                break;
+                case "2":
+                window.location="Funcion 2.html";
+                break;
+            
+              }
+              document.getElementById("demo").innerHTML = text;
+            }
+            </script>
+
+    </body>
+
+</html>

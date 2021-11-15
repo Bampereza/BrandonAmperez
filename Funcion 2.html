@@ -1,0 +1,97 @@
+<!--Brandon Ampérez 0909 - 21 - 4628 -->
+
+<!DOCTYPE html>
+<html lang="es-ES">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="paqueteria.css">
+
+    <style>body {
+        background-color:rgb(255, 197, 37)
+    }
+    </style>
+
+    <title>Funcion 2</title>
+
+    <body>
+        <form ><!-- Menu de opciones -->
+          <h1> Elija una de las opciones  </h1><br>
+          <h2></h2><br>
+       <h3>1: paquetes<br>
+          2: mobiliario <br>
+          3: repuestos <br>
+          4: art. Electrónicos <br>
+         
+        </h3><br><br>
+    
+         
+         <div>
+            <form action="">
+                opcion:<br>
+                <br> <!-- cuadros de texto de acciones-->
+              <input class="controls" id="op" type="text" placeholder="ingrese su opcion"> <br>  <br> 
+              <input class="controls" id="op1" type="text" placeholder="ingrese el largo"> <br>  <br> 
+              <input class="controls" id="op2" type="text" placeholder="ingrese el ancho"> <br>  <br> 
+              <input class="controls" id="op3" type="text" placeholder="ingrese el alto"> <br>  <br> 
+              <input type="button" value="seleccion" onclick="myFunction()" id="boton"></input> 
+               <br><br>
+              <p id="demo"></p>
+            </form>
+         </div><br>
+          <br><br>
+          </form>
+          <script>  //funciones y switch
+            function myFunction() { 
+         
+              var opcion = document.getElementById("op").value;
+            
+              switch(opcion) { 
+                case "1":
+                
+
+                var Resultado1= parseInt(document.getElementById("op1").value) ;
+                var Resultado2= parseInt(document.getElementById("op2").value) ;
+                var Resultado3= parseInt(document.getElementById("op3").value) ;
+                var Resultado4= (Resultado1*Resultado2*Resultado3/2272);
+                alert("El peso total es: "+ Resultado4);
+                break;
+
+                case "2":
+                
+                var Resultado5= parseInt(document.getElementById("op1").value) ;
+                var Resultado6= parseInt(document.getElementById("op2").value) ;
+                var Resultado7= parseInt(document.getElementById("op3").value) ;
+                var Resultado8= (Resultado5*Resultado6*Resultado7/2272);
+                alert("El pero total es: "+ Resultado8);
+                break;
+                
+
+                case "3":
+                
+                var Resultado9= parseInt(document.getElementById("op1").value) ;
+                var Resultado10= parseInt(document.getElementById("op2").value) ;
+                var Resultado11= parseInt(document.getElementById("op3").value) ;
+                var Resultado12= (Resultado9*Resultado10*Resultado11/2272);
+                alert("El peso total es: "+ Resultado12);
+                break;
+
+                case "4":
+                
+                var Resultado13= parseInt(document.getElementById("op1").value) ;
+                var Resultado14= parseInt(document.getElementById("op2").value) ;
+                var Resultado15= parseInt(document.getElementById("op3").value) ;
+                var Resultado16= (Resultado13*Resultado14*Resultado15/2272);
+                alert("El peso total es: "+ Resultado16);
+                break;
+                 
+            
+              }
+              document.getElementById("demo").innerHTML = text;
+            }
+            </script>
+          
+        
+          </body>
+          </html>
